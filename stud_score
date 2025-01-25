@@ -1,0 +1,18 @@
+function adjustScores(scores) {
+  let passedCount = 0;
+  for (let i = 0; i < scores.length; i++) {
+    if (scores[i] < 40) {
+      scores[i] += 20;
+    }
+    if (scores[i] > 90) {
+      scores[i] = 90;
+    }
+    if (scores[i] >= 50) {
+      passedCount++;
+    }
+  }
+  console.log("Number of students who passed: " + passedCount);
+  console.log("Final adjusted scores: ", scores);
+}
+let studentScores = [35, 42, 95, 60, 82, 37, 72, 90, 88, 29];
+adjustScores(studentScores);
