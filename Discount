@@ -1,0 +1,7 @@
+function Discount(age){
+    (age <=0 )? console.log("Invalid Age"):
+    (age >= 60)? console.log("Eligible foe Senior Discount"):
+    console.log("Not Eligible for Senior Discount")
+}
+Discount(61)
+Discount(-1)
