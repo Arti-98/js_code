@@ -1,0 +1,20 @@
+let scores = [35, 92, 48, 60, 20, 87, 99, 43, 55, 38];
+
+for (let i = 0; i < scores.length; i++) {
+  if (scores[i] < 40) {
+    scores[i] += 20;
+  }
+  if (scores[i] > 90) {
+    scores[i] = 90;
+  }
+}
+
+let passedCount = 0;
+for (let i = 0; i < scores.length; i++) {
+  if (scores[i] >= 50) {
+    passedCount++;
+  }
+}
+
+console.log("Passed students:", passedCount);
+console.log("Final scores:", scores);
