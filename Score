@@ -1,8 +1,8 @@
 let studentScores = {
-  John: 85,
-  Emma: 92,
-  Sam: 67,
-  Bob: 45
+  Jony: 85,
+  Emily: 92,
+  Sameer: 67,
+  Bobby: 45
 };
 for (let student in studentScores) {
   let score = studentScores[student];
